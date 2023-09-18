@@ -13,6 +13,7 @@
         <style>
             .image-tumbail{
                 height: 200px;
+                object-fit: cover;
             }
         </style>
 
@@ -30,6 +31,9 @@
                             <li class="list-group-item">Cras justo odio</li>
                             <li class="list-group-item">Dapibus ac facilisis in</li>
                             <li class="list-group-item">Vestibulum at eros</li>
+                            
+                            <a href="{% url 'add'%}" class="btn btn-dark btn-block btn-sm m-1">Add Photo</a>
+                            
                         </ul>
                       </div>
                 </div>
@@ -38,12 +42,12 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <img class="image-tumbail"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK2RJysqqQBr3eYWoAlXYTwEh8IRUS1lft_g&usqp=CAU" 
+                                src="https://m.media-amazon.com/images/M/MV5BODUyNzEwNDkzNl5BMl5BanBnXkFtZTcwMzcwMDYzOA@@._V1_.jpg" 
                                 alt="Card image cap">
                                 <div class="card-body">
                                     <small>Programming</small>
                                 </div>
-                                <a class="btn btn-outline-dark btn-sm m-1">View</a>
+                                <a href="{%  url 'photo' 'pk' %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                             </div>
                         </div>
 
@@ -55,7 +59,7 @@
                                 <div class="card-body">
                                     <small>Programming</small>
                                 </div>
-                                <a class="btn btn-outline-dark btn-sm m-1">View</a>
+                                <a href="{%  url 'photo' 'pk' %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                             </div>
                         </div>
 
@@ -67,7 +71,7 @@
                                 <div class="card-body">
                                     <small>Programming</small>
                                 </div>
-                                <a class="btn btn-outline-dark btn-sm m-1">View</a>
+                                <a href="{%  url 'photo' 'pk' %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                             </div>
                         </div>
 
@@ -79,7 +83,7 @@
                                 <div class="card-body">
                                     <small>Programming</small>
                                 </div>
-                                <a class="btn btn-outline-dark btn-sm m-1">View</a>
+                                <a href="{%  url 'photo' 'pk' %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                             </div>
                         </div>
                      </div>  
